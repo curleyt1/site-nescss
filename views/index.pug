@@ -1,5 +1,26 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang="en")
+  head
+    link(href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet")
+    link(href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet")
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title
+  body
+    h1=Software
+    ul
+      li
+        span <a href="https://librewolf.net/">Librewolf</a> is a fork of firefox with privacy-focused defaults and none of Mozilla's new AI features.
+      li
+        span <a href="https://www.aseprite.org/">VSCodium</a>, the text editor I use, a community-driven version of Visual Studio Code without any of Microsoft's telemetry shoved into it.
+      li
+        span <a href="https://https://tildearrow.org/furnace/">Furnace Tracker</a> is a fun music-making program tailored towards chiptune music.
+      li
+        span <a href="https://www.aseprite.org/">Aseprite</a> has everything you need for drawing and animating sprites. Sometimes I just like using it as a basic image editor, too!
+      
+    h2=About
+    ul
+      li
+        span This page is rendered with <a href="https://pugjs.org">Pug</a> and <a href="https://expressjs.com">Express.js</a>.
+      li
+        span Assets used: <a href="https://nostalgic-css.github.io/NES.css/">Nostalgic CSS</a> and <a href="https://fonts.google.com/specimen/Press+Start+2P">Press Start 2P</a>.
